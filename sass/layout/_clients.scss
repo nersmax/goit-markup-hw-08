@@ -1,20 +1,24 @@
 .clients {
   text-align: center;
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  &__header {
+    font-weight: var(--font-weight-bold);
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+  }
+  &__item + .clients__item {
+    margin-left: 30px;
+  }
+  &__icon {
+    fill: currentColor;
+  }
 }
-.clients__header {
-  font-weight: var(--font-weight-bold);
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-}
-.clients__list {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-.clients__item + .clients__item {
-  margin-left: 30px;
-}
+
 .clients__link {
   display: flex;
   width: 170px;
@@ -32,8 +36,5 @@
     border: 1px solid var(--first-backlight-color);
     cursor: pointer;
     color: var(--first-backlight-color);
-  }
-  .clients__icon {
-    fill: currentColor;
   }
 }

@@ -1,12 +1,16 @@
 .filters {
   font-size: 16px;
-}
-.filters__list {
-  display: flex;
-  justify-content: center;
-}
-.filters__list .filters__item + .filters__item {
-  margin-left: 8px;
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+  &__list &__item + &__item {
+    margin-left: 8px;
+  }
 }
 .filters__button {
   font-weight: var(--font-weight-medium);

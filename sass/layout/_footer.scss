@@ -1,35 +1,40 @@
 .footer {
   background-color: var(--background-color);
 }
-.footer-logo {
-  display: inline-block;
-  font-family: Raleway;
-  font-weight: var(--font-weight-bold);
-  font-size: 26px;
-  line-height: 1.19;
-  padding-top: 0px;
-  margin-bottom: 20px;
-  color: var(--first-backlight-color);
-}
-.footer-logo__White {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--text-white-color);
-}
 .address {
   font-family: Roboto;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--text-white-color);
+  &__item {
+    margin-top: 9px;
+  }
+  &__list :first-child {
+    margin-top: 0px;
+  }
 }
-.adress__item {
-  margin-top: 9px;
+.address__link {
+  display: inline-block;
+  color: #ffffff99;
+  transition-property: color;
+  transition-duration: var(--timing-hover-focus);
+  transition-timing-function: var(--function-hover-focus);
+  &:hover,
+  &:focus {
+    color: var(--second-backlight-color);
+  }
 }
-.adress__list :first-child {
-  margin-top: 0px;
+.address__text {
+  display: inline-block;
+  color: var(--text-white-color);
+  transition-property: color;
+  transition-duration: var(--timing-hover-focus);
+  transition-timing-function: var(--function-hover-focus);
+  &:hover,
+  &:focus {
+    color: var(--first-backlight-color);
+  }
 }
 
 .footer-container {
@@ -43,28 +48,4 @@
 }
 .footer-contacts {
   flex-grow: 1;
-}
-
-.address__link {
-  display: inline-block;
-  color: #ffffff99;
-  transition-property: color;
-  transition-duration: var(--timing-hover-focus);
-  transition-timing-function: var(--function-hover-focus);
-  &:hover,
-  &:focus {
-    color: var(--second-backlight-color);
-  }
-}
-
-.address__text {
-  display: inline-block;
-  color: var(--text-white-color);
-  transition-property: color;
-  transition-duration: var(--timing-hover-focus);
-  transition-timing-function: var(--function-hover-focus);
-  &:hover,
-  &:focus {
-    color: var(--first-backlight-color);
-  }
 }
