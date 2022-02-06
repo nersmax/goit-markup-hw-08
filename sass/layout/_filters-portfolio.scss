@@ -1,0 +1,33 @@
+.filters {
+  font-size: 16px;
+}
+.filters__list {
+  display: flex;
+  justify-content: center;
+}
+.filters__list .filters__item + .filters__item {
+  margin-left: 8px;
+}
+.filters__button {
+  font-weight: var(--font-weight-medium);
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background: var(--background-filters-button);
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  transition-property: color, background, box-shadow;
+  transition-duration: var(--timing-hover-focus);
+  transition-timing-function: var(--function-hover-focus);
+  &:focus,
+  &:hover {
+    background: var(--first-backlight-color);
+    color: var(--second-backlight-color);
+    box-shadow: 0px 2px 2px 0px #0000001f;
+
+    box-shadow: 0px 1px 2px 0px #00000014;
+
+    box-shadow: 0px 3px 1px 0px #0000001a;
+  }
+}
