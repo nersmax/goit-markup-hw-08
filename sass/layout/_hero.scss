@@ -28,6 +28,8 @@
     color: var(--text-white-color);
   }
   &__button {
+    display: block;
+    justify-content: center;
     font-weight: var(--font-weight-bold);
     font-size: 16px;
     line-height: 1.87;
@@ -42,6 +44,7 @@
     padding-bottom: 10px;
     padding-left: 32px;
     padding-right: 32px;
+    text-align: center;
     transition-property: background;
     transition-duration: var(--timing-hover-focus);
     transition-timing-function: var(--function-hover-focus);

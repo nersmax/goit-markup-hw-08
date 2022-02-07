@@ -2,6 +2,7 @@
   color: var(--text-white-color);
   &__list {
     display: flex;
+    justify-content: center;
   }
   &__icon {
     fill: var(--second-backlight-color);
@@ -11,14 +12,25 @@
   }
   &__header {
     font-weight: var(--font-weight-bold);
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 60px;
     margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+      margin-top: 0;
+      text-align: left;
+    }
   }
 }
+
 .footer-social-wrap {
-  margin-left: 70px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 70px;
+  }
 }
 
 .footer-social__link {
