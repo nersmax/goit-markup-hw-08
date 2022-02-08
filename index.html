@@ -17,57 +17,111 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body >    
-        <!-- <header>
+        <header>
             <div class="container header--container">
                 <a class="logo" href="">
                     Web <span class="logo__color">Studio </span>
-                </a> -->
+                </a>
                 <!--navigation-->
-                    <!-- <nav class="nav">
-                            <ul class="nav__list" >
-                                <li class="nav__item nav__item--position">
-                                <a class="nav__link nav__link--active" href="./index.html">Студия</a>
-                                </li>
-                                <li class="nav__item">
-                                <a class="nav__link"  href="./portfolio.html">Портфолио</a>
-                                </li>
-                                <li class="nav__item">
-                                <a class="nav__link"  href="">Контакты</a>
-                                </li>
-                            </ul>
-                    </nav> -->
-            <!--contacts-->
-                    <!-- <ul class="contacts">
-                        <li class="contacts__item">                            
-                            <a class="contacts__link" href="mailto:info@devstudio.com">
-                                <svg class="contacts__icon" width="16" height="12">
-                                    <use href="./image/icon.svg#icon-envelope">
-                                    </use>
-                                </svg>
-                                info@devstudio.com</a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item ">
+                            <a class="nav__link " href="./index.html">Студия</a>
                         </li>
-                        <li class="contacts__item">
+                        <li class="nav__item nav__item--position">
+                            <a class="nav__link nav__link--active" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--contacts-->
+                <ul class="contacts ">
+                    <li class="contacts__item">
+                        <a class="contacts__link" href="mailto:info@devstudio.com">
+                            <svg class="contacts__icon" width="16" height="12">
+                                <use href="./image/icon.svg#icon-envelope">
+                                </use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="contacts__item">
                         <a class="contacts__link" href="tel:+380961111111">
                             <svg class="contacts__icon" width="10" height="16">
                                 <use href="./image/icon.svg#icon-smartphone">
                                 </use>
                             </svg>
                             +38 096 111 11 11</a>
-                        </li>
-                    </ul>
+                    </li>
+                </ul>
+            </div>
+                    <div>
+                        <button type="button"  class=" mob-menu-open js-open-menu">x</button>
+                    </div>
+                
+                <div class="mob-menu  " >
+                    <div class="mob-container js-menu-container">
+                        <div class="mob-menu-top">
+                            <button type="button" class="menu-close-btn js-close-menu">
+                                <svg class="menu-close-icon" width="40" height="40">
+                                    <use href="./image/icon.svg#icon-mob-close_40px">
+                                    </use>
+                                </svg>
+                            </button>
+                            <ul>
+                                <li class="mob-menu-nav-item">
+                                    <a class="mob-menu-nav mob-menu-nav--active" href="./index.html">Студия</a>
+                                </li>
+                                <li class="mob-menu-nav-item">
+                                    <a class="mob-menu-nav" href="./portfolio.html">Портфолио</a>
+                                </li>
+                                <li class="mob-menu-nav-item">
+                                    <a class="mob-menu-nav" href="">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mob-menu-bottom " >
+                            <ul class="mob-menu-contacts-list">
+                                    <li class="mob-menu-contacts-item">
+                                        <a class="mob-menu-contacts-link" href="tel:+380961111111">
+                                            +38 096 111 11 11</a>
+                                    </li>
+                                    <li class="mob-menu-contacts-item">
+                                    <a class="mob-menu-contacts-link" href="mailto:info@devstudio.com">
+                                        info@devstudio.com</a>
+                                    </li>
+                                </ul>
+                                <ul class="mob-menu-social-list">
+                                    <li class="mob-menu-social-item">
+                                        <a class="mob-menu-social-link-first" href="">Instagram</a>
+                                    </li>
+                                    <li class="mob-menu-social-item">
+                                        <a class="mob-menu-social-link" href="">Twitter</a>
+                                    </li>
+                                    <li class="mob-menu-social-item">
+                                        <a class="mob-menu-social-link" href="">Facebook</a>
+                                    </li>
+                                    <li class="mob-menu-social-item">
+                                        <a class="mob-menu-social-link" href="">LinkedIn</a>
+                                    </li>
+                            </ul>
+                        </div>
+                    </div>
+                        
                 </div>
         </header>   
     <main>
     <section>
         <div class="container hero">
             <h1 class="hero__header"> Эффективные решения для вашего бизнеса </h1>
-                <button class="hero__button" type="button" data-modal-open>
-                    Заказать услугу
-                </button>       
+            <button class="hero__button" type="button" data-modal-open>
+                Заказать услугу
+            </button>
         </div>
-    </section> -->
+    </section>
     <!--conditions-->
-    <section class="sections ">
+    <!-- <section class="sections ">
         <div class="conditions container">
             <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="conditions__list">
@@ -114,7 +168,7 @@
                     </li>
                 </ul>
             </div>
-    </section>
+    </section> -->
     <!--about-->
     <!-- <section class="sections">
         <div class=" about container">
@@ -473,7 +527,7 @@
             </form>
         </div> 
    </footer>
-    <!-- <div class="backdrop is-hidden" data-modal >
+    <div class="backdrop is-hidden" data-modal >
         <div class="modal">
             <button type="button" class="modal__close" data-modal-close>
                 <svg class="modal__close-icon" width="18" height="18">
@@ -529,8 +583,10 @@
             </form>
 
         </div>
-    </div> 
-   <script src="./js/modal.js"></script> --> 
+    </div>     
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    
    
 </body>
 </html>

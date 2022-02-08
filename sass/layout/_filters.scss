@@ -1,12 +1,11 @@
 .filters {
-  font-size: 16px;
+  margin-top: -15px;
   &__list {
     display: flex;
-    justify-content: center;
-  }
-  &__list {
-    display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+    }
   }
   &__list &__item + &__item {
     margin-left: 8px;
@@ -14,7 +13,9 @@
 }
 .filters__button {
   font-weight: var(--font-weight-medium);
+  font-size: 16px;
   line-height: 1.6;
+  margin-top: 15px;
   letter-spacing: 0.03em;
   cursor: pointer;
   background: var(--background-filters-button);

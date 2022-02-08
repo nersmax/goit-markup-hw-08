@@ -11,8 +11,8 @@
   transform: rotate(150deg);
 }
 .modal {
-  width: 528px;
-  min-height: 581px;
+  width: 90vw;
+  min-height: 609px;
   background-color: var(--second-backlight-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -23,7 +23,15 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform 600ms;
   padding: 40px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
+
 .modal-title {
   font-weight: var(--font-weight-bold);
   font-size: 20px;
@@ -127,15 +135,18 @@
 }
 .form-checkbox__text {
   display: flex;
-  font-size: 14px;
-  line-height: 1.7px;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
-
   justify-content: center;
   align-items: center;
   .form-checkbox__input:checked + &::before {
     border: none;
     background-image: url(../image/iconcheck.svg);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7px;
   }
 }
 

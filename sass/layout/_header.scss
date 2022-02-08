@@ -24,10 +24,9 @@
 }
 
 .contacts__link {
-  display: flex;
   font-weight: var(--font-weight-medium);
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -40,20 +39,31 @@
   &:focus {
     color: var(--first-backlight-color);
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  margin-left: 84px;
   &__icon {
     fill: currentColor;
     margin-right: 10px;
   }
-  & &__item + &__item {
-    margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
   }
+
   &__icon {
     fill: currentColor;
     margin-right: 10px;
+  }
+}
+.contacts .contacts__item + .contacts__item {
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
   }
 }
