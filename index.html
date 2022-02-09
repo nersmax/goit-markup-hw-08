@@ -21,15 +21,15 @@
             <div class="container header--container">
                 <a class="logo" href="">
                     Web <span class="logo__color">Studio </span>
-                </a>
+                </a>                
                 <!--navigation-->
                 <nav class="nav">
                     <ul class="nav__list">
-                        <li class="nav__item ">
-                            <a class="nav__link " href="./index.html">Студия</a>
-                        </li>
                         <li class="nav__item nav__item--position">
-                            <a class="nav__link nav__link--active" href="./portfolio.html">Портфолио</a>
+                            <a class="nav__link nav__link--active " href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav__item ">
+                            <a class="nav__link " href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class="nav__item">
                             <a class="nav__link" href="">Контакты</a>
@@ -56,12 +56,9 @@
                     </li>
                 </ul>
             </div>
-                    <div>
-                        <button type="button"  class=" mob-menu-open js-open-menu">x</button>
-                    </div>
-                
-                <div class="mob-menu  " >
-                    <div class="mob-container js-menu-container">
+                    
+                <div class="mob-menu  is-hidden " >
+                    <div class="mob-container  js-menu-container">
                         <div class="mob-menu-top">
                             <button type="button" class="menu-close-btn js-close-menu">
                                 <svg class="menu-close-icon" width="40" height="40">
@@ -110,6 +107,17 @@
                     </div>
                         
                 </div>
+                <div class="container header-mob">
+                    <a class="logo" href="">
+                        Web <span class="logo__color">Studio </span>
+                    </a>
+                    <button type="button" class=" mob-menu-open js-open-menu">
+                        <svg class="header-mob__icon" width="40" height="40">
+                            <use href="./image/icon.svg#icon-menu_40px">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
         </header>   
     <main>
     <section>
@@ -121,7 +129,7 @@
         </div>
     </section>
     <!--conditions-->
-    <!-- <section class="sections ">
+    <section class="sections sections-conditions  ">
         <div class="conditions container">
             <h2 class="visually-hidden">Наши преимущества</h2>
                 <ul class="conditions__list">
@@ -168,41 +176,73 @@
                     </li>
                 </ul>
             </div>
-    </section> -->
+    </section>
     <!--about-->
-    <!-- <section class="sections">
+    <section class="sections about-hidden ">
         <div class=" about container">
             <h2 class="about__header">Чем мы занимаемся</h2>
             <ul class="about__list">
                 <li class="about__imj">
-                    <img src="./image/ocupation1.jpg"  width="370" alt="tablet keyboard two hands">
+                    <picture>
+                        <source
+                        srcset="./image/ocupation/ocupation1.JPG 1x,
+                                ./image/ocupation/a1_2x.jpg 2x"
+                                media="(min-width:1200px)"
+                                >                               
+                    <img src="./image/ocupation1.jpg"  alt="tablet keyboard two hands">
+                    </picture>
                     <div class="about__text">
                         <p>Десктопные приложения</p>
                     </div>
+                    
                 </li>
                 <li class="about__imj">
-                    <img src="./image/ocupation2.jpg"  width="370" alt="laptop smartphone two hands">
+                    <picture>
+                        <source
+                        srcset="./image/ocupation/ocupation2.JPG 1x,
+                                ./image/ocupation/a2_2x.jpg 2x"
+                                media="(min-width:1200px)"
+                                >                               
+                    <img src="./image/ocupation2.jpg"  alt="tablet keyboard two hands">
+                    </picture>
+                    
                     <div class="about__text">
                         <p>Мобильные приложения</p>
                     </div>
                 </li> 
                 <li class="about__imj">
-                    <img src="./image/ocupation3.jpg"  width="370" alt="tablet two hands">
+                    <picture>
+                        <source srcset="./image/ocupation/ocupation3.JPG 1x,
+                                                    ./image/ocupation/a3_2x.jpg 2x" media="(min-width:1200px)">
+                        <img src="./image/ocupation3.jpg" alt="tablet keyboard two hands">
+                    </picture>
+                    
                     <div class="about__text">
                         <p>Дизайнерские решения</p>
                     </div>
                 </li>
             </ul>
         </div>
-    </section> -->
+    </section>
     <!--team-->
      <section class="sections sections-bg " >
                  <div class="container">
             <h2 class="team-header">Наша команда</h2>
                 <ul class="team">
                     <li class="team__card">
-                        <img src="./image/productdesigner.jpg" width="270" alt="smiling man">
-                        <div class="person person--border">
+                        <picture>                      
+                                <source srcset="./image/team/team-1_d_1x.JPG 1x,
+                                                ./image/team/team-1_d_2x.JPG 2x" 
+                                            media="(min-width: 1200px)">
+                                <source srcset="./image/team/team-1_t_1x.jpg 1x,
+                                                ./image/team/team-1_t_2x.jpg 2x" 
+                                        media="(min-width: 768px)">
+                                <source srcset="./image/team/team-1_m_1x.jpg 1x,
+                                                ./image/team/team-1_m_2x.jpg 2x"
+                                        media="(min-width: 320px)">
+                        <img src="./image/team/team-1_d_1x" alt="smiling man"/>
+                    </picture>
+                            <div class="person person--border">
                             <h3 class="person__name">
                                 Игорь Демьяненко  
                             </h3>
@@ -246,7 +286,16 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img src="./image/frontenddeveloper.jpg" width="270" alt="smailing woman">
+                        <picture>
+                            <source srcset="./image/team/team-2_d_1x.JPG 1x,
+                                                                        ./image/team/team-2_d_2x.JPG 2x" media="(min-width: 1200px)">
+                            <source srcset="./image/team/team-2_t_1x.jpg 1x,
+                                                                        ./image/team/team-2_t_2x.jpg 2x" media="(min-width: 768px)">
+                            <source srcset="./image/team/team-2_m_1x.jpg 1x,
+                                                                        ./image/team/team-2_m_2x.jpg 2x" media="(min-width: 320px)">
+                            <img src="./image/team/team-2_d_1x" alt="smiling man" />
+                        </picture>
+                        
                         <div class="person person--border">
                             <h3 class="person__name">
                             Ольга Репина 
@@ -291,7 +340,19 @@
                         </div>
                     </li>
                     <li class="team__card">
-                        <img src="./image/marketing.jpg" width="270" alt="smiling man">
+                        <picture>
+                            <source srcset="./image/team/team-3_d_1x.JPG 1x,
+                                            ./image/team/team-3_d_2x.JPG 2x"
+                                media="(min-width: 1200px)">
+                            <source srcset="./image/team/team-3_t_1x.jpg 1x,
+                                            ./image/team/team-3_t_2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source srcset="./image/team/team-3_m_1x.jpg 1x,
+                                            ./image/team/team-3_m_2x.jpg 2x"
+                                media="(min-width: 320px)">
+                            <img src="./image/team/team-3_d_1x" alt="smiling man" />
+                        </picture>
+                        
                         <div class="person person--border">
                             <h3 class="person__name">
                             Николай Тарасов
@@ -337,7 +398,22 @@
                         </div>
                     </li >
                     <li class="team__card">
-                        <img src="./image/uidesigner.jpg" width="270" alt="smiling man">
+                        <picture>
+                            <source
+                                srcset="./image/team/team-4_d_1x.JPG 1x,
+                                    ./image/team/team-4_d_2x.JPG 2x"
+                                media="(min-width: 1200px)">
+                            <source
+                                srcset="./image/team/team-4_t_1x.jpg 1x,
+                                    ./image/team/team-4_t_2x.jpg 2x"
+                                media="(min-width: 768px)">
+                            <source
+                                srcset="./image/team/team-4_m_1x.jpg 1x,
+                                    ./image/team/team-4_m_2x.jpg 2x"
+                                media="(min-width: 320px)">
+                            <img src="./image/team/team-4_d_1x" alt="smiling man" />
+                        </picture>
+                        
                         <div class="person person--border">
                             <h3 class="person__name">
                             Михаил Ермаков

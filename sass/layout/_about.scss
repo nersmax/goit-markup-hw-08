@@ -1,6 +1,15 @@
 .about {
   text-align: center;
 }
+.about-hidden {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
+
 .about__header {
   font-weight: var(--font-weight-bold);
   font-size: 36px;

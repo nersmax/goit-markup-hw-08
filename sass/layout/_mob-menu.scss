@@ -1,6 +1,28 @@
 .mob-container {
-  width: 480px;
   display: flex;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+}
+.header-mob {
+  display: flex;
+  border-bottom: solid 1px #ececec;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.header-mob__icon {
+  &:hover,
+  &:focus .modal__close-icon {
+    fill: var(--first-backlight-color);
+  }
+}
+.mob-menu-open {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .mob-menu-bottom {
   position: absolute;
@@ -11,7 +33,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: #ffffff;
