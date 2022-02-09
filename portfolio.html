@@ -56,16 +56,67 @@
                 </li>
             </ul>
         </div>
+        
         <div class="container header-mob">
             <a class="logo" href="">
                 Web <span class="logo__color">Studio </span>
             </a>
-            <button type="button" class=" mob-menu-open js-open-menu">
+            <button type="button" class=" mob-menu-open" data-menu-open>
                 <svg class="header-mob__icon" width="40" height="40">
                     <use href="./image/icon.svg#icon-menu_40px">
                     </use>
                 </svg>
             </button>
+        </div>
+        <div class="mob-menu  is-hidden " data-menu>
+            <div class="mob-container ">
+                <div>
+                    <button type="button" class="menu-close-btn" data-menu-close>
+                        <svg class="menu-close-icon" width="40" height="40">
+                            <use href="./image/icon.svg#icon-mob-close_40px">
+                            </use>
+                        </svg>
+                    </button>
+                    <ul>
+                        <li class="mob-menu-nav-item">
+                            <a class="mob-menu-nav " href="./index.html">Студия</a>
+                        </li>
+                        <li class="mob-menu-nav-item">
+                            <a class="mob-menu-nav mob-menu-nav--active" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="mob-menu-nav-item">
+                            <a class="mob-menu-nav" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mob-menu-bottom ">
+                    <ul class="mob-menu-contacts-list">
+                        <li class="mob-menu-contacts-item">
+                            <a class="mob-menu-contacts-tel" href="tel:+380961111111">
+                                +38 096 111 11 11</a>
+                        </li>
+                        <li class="mob-menu-contacts-item">
+                            <a class="mob-menu-contacts-link" href="mailto:info@devstudio.com">
+                                info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="mob-menu-social-list">
+                        <li class="mob-menu-social-item">
+                            <a class="mob-menu-social-link-first" href="">Instagram</a>
+                        </li>
+                        <li class="mob-menu-social-item">
+                            <a class="mob-menu-social-link" href="">Twitter</a>
+                        </li>
+                        <li class="mob-menu-social-item">
+                            <a class="mob-menu-social-link" href="">Facebook</a>
+                        </li>
+                        <li class="mob-menu-social-item">
+                            <a class="mob-menu-social-link" href="">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
         </div>
     </header>
     <main>

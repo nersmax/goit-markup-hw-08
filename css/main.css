@@ -575,12 +575,6 @@ body {
   }
 }
 
-.mob-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media screen and (min-width: 480px) {
   .mob-container {
     width: 480px;
@@ -657,6 +651,16 @@ body {
 .mob-menu-contacts-item {
   margin-top: 30px;
   margin-bottom: 64px;
+}
+
+.mob-menu-contacts-tel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .mob-menu-contacts-link {
@@ -1465,12 +1469,12 @@ body {
       flex-wrap: wrap;
   margin-top: 10px;
   margin-bottom: -30px;
-  margin-left: -30px;
 }
 
 @media screen and (min-width: 768px) {
   .project {
     margin-top: 0;
+    margin-left: -30px;
   }
 }
 

@@ -1,5 +1,5 @@
 .mob-container {
-  display: flex;
+  // display: flex;
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -24,6 +24,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
 .mob-menu-bottom {
   position: absolute;
   margin-bottom: 48px;
@@ -62,6 +63,15 @@
 .mob-menu-contacts-item {
   margin-top: 30px;
   margin-bottom: 64px;
+}
+.mob-menu-contacts-tel {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 .mob-menu-contacts-link {
   font-family: Roboto;
