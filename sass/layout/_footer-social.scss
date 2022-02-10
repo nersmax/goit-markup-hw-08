@@ -1,6 +1,9 @@
 .footer-social {
   color: var(--text-white-color);
   margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 
   &__list {
     display: flex;
@@ -19,8 +22,8 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     text-align: center;
+
     @media screen and (min-width: 1200px) {
-      margin-top: 0;
       text-align: left;
     }
   }
