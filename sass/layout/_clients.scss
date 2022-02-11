@@ -3,6 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-left: -30px;
+  margin-bottom: -30px;
   align-items: center;
 
   &__item {
@@ -22,8 +23,8 @@
 }
 .clients-header {
   font-weight: var(--font-weight-bold);
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;

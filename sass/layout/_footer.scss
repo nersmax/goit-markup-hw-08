@@ -55,6 +55,7 @@
 .footer-contacts {
   @media screen and (min-width: 1200px) {
     display: block;
+    flex-grow: 1;
   }
 }
 .footer-contacts-wrap {
