@@ -40,6 +40,7 @@
     overflow: auto;
   }
   &__item {
+    display: flex;
     @media screen and (min-width: 768px) {
       width: calc(100% / 2 - 30px);
       margin-left: 30px;
@@ -48,12 +49,6 @@
       width: calc(100% / 3 - 30px);
       margin-left: 30px;
     }
-  }
-  &__link--first {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex-grow: 1;
   }
 
   &__container {
@@ -83,7 +78,8 @@
 }
 
 .project__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
   transition-property: box-shadow;
   transition-duration: var(--timing-hover-focus);
   transition-timing-function: var(--function-hover-focus);
