@@ -2,8 +2,6 @@
   margin-left: 88px;
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
-    font-size: 14px;
-    line-height: 1.14;
   }
   &__list {
     display: flex;
@@ -13,27 +11,32 @@
   }
   &__link {
     display: inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    align-items: baseline;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    color: #212121;
+    font-weight: var(--font-weight-medium);
     transition-property: color;
     transition-duration: var(--timing-hover-focus);
     transition-timing-function: var(--function-hover-focus);
     &:hover,
     &:focus {
       color: var(--first-backlight-color);
+      font-weight: var(--font-weight-medium);
     }
-  }
-  &__link {
-    font-weight: var(--font-weight-medium);
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-    color: var(--headers-dark-color);
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 1.14;
     }
+    @media screen and (min-width: 768px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
+
   &__item--position {
     position: relative;
   }

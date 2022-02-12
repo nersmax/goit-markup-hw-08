@@ -20,33 +20,47 @@
   display: inline-block;
   font-family: Raleway;
   font-weight: var(--font-weight-bold);
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   padding-top: 16px;
   padding-bottom: 16px;
-
   margin-bottom: 0;
   color: var(--first-backlight-color);
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
   &__color {
     font-family: Raleway;
     font-weight: var(--font-weight-bold);
+    font-size: 24px;
+    line-height: 1.17;
+    color: black;
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.19;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-size: 26px;
     line-height: 1.19;
-    color: black;
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
 }
 
 .contacts__link {
+  display: block;
   font-weight: var(--font-weight-medium);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 0px;
   color: var(--text-color);
   align-items: center;
   transition-property: color;
@@ -56,28 +70,50 @@
   &:focus {
     color: var(--first-backlight-color);
   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
     font-size: 14px;
     line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
 .contacts {
-  margin-left: 84px;
+  display: block;
+  margin-left: auto;
+  padding-top: 21px;
+  padding-bottom: 21px;
   &__icon {
     fill: currentColor;
     margin-right: 10px;
   }
+  &__item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+    }
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
-    margin-left: auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__icon {
     fill: currentColor;
     margin-right: 10px;
   }
+}
+.contacts__item:last-child {
+  margin-bottom: 0px;
 }
 .contacts .contacts__item + .contacts__item {
   @media screen and (min-width: 1200px) {

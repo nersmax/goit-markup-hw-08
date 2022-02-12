@@ -97,8 +97,6 @@ body {
 @media screen and (min-width: 1200px) {
   .nav {
     margin-left: 93px;
-    font-size: 14px;
-    line-height: 1.14;
   }
 }
 
@@ -114,32 +112,40 @@ body {
 
 .nav__link {
   display: inline-block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  color: #212121;
+  font-weight: var(--font-weight-medium);
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: var(--timing-hover-focus);
           transition-duration: var(--timing-hover-focus);
   -webkit-transition-timing-function: var(--function-hover-focus);
           transition-timing-function: var(--function-hover-focus);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
 }
 
 .nav__link:hover, .nav__link:focus {
   color: var(--first-backlight-color);
-}
-
-.nav__link {
   font-weight: var(--font-weight-medium);
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  color: var(--headers-dark-color);
 }
 
 @media screen and (min-width: 1200px) {
   .nav__link {
     font-size: 14px;
     line-height: 1.14;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -498,36 +504,59 @@ body {
   display: inline-block;
   font-family: Raleway;
   font-weight: var(--font-weight-bold);
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   padding-top: 16px;
   padding-bottom: 16px;
   margin-bottom: 0;
   color: var(--first-backlight-color);
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
 .logo__color {
   font-family: Raleway;
   font-weight: var(--font-weight-bold);
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: black;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .logo__color {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .logo {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
 
 .contacts__link {
+  display: block;
   font-weight: var(--font-weight-medium);
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 0px;
   color: var(--text-color);
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -544,6 +573,14 @@ body {
   color: var(--first-backlight-color);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts__link {
     display: -webkit-box;
@@ -551,16 +588,37 @@ body {
     display: flex;
     font-size: 14px;
     line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
 .contacts {
-  margin-left: 84px;
+  display: block;
+  margin-left: auto;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.contacts__item {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -568,13 +626,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1031,6 +1094,13 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .team-header {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
 .team {
   margin-top: 50px;
   margin-bottom: -30px;
@@ -1188,6 +1258,13 @@ body {
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-header {
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .clients-list__link {
@@ -1384,6 +1461,7 @@ body {
 }
 
 .footer-social__header {
+  font-size: 14px;
   font-weight: var(--font-weight-bold);
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1437,6 +1515,8 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: -8px;
+  margin-top: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1444,6 +1524,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 0;
   }
 }
 
@@ -1453,6 +1534,13 @@ body {
 
 .filters__item {
   margin-top: 15px;
+  margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .filters__item {
+    margin-top: 0;
+  }
 }
 
 .filters .filters__button {
@@ -1492,13 +1580,13 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: -30px;
 }
 
 @media screen and (min-width: 768px) {
   .project {
-    margin-top: 0;
+    margin-top: 30px;
     margin-left: -30px;
     margin-bottom: -30px;
   }
@@ -1511,7 +1599,7 @@ body {
 }
 
 .project__item {
-  margin-top: 30px;
+  margin-bottom: 30px;
   width: 100%;
 }
 
@@ -1642,6 +1730,7 @@ body {
 
 .footer-form .footer-form__header {
   text-align: center;
+  font-size: 14px;
   font-weight: var(--font-weight-bold);
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1658,7 +1747,7 @@ body {
 
 .footer-form .footer-form__list {
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1727,13 +1816,18 @@ body {
   border-radius: 4px;
   border: transparent;
   cursor: pointer;
-  margin-left: 12px;
   -webkit-transition-property: background;
   transition-property: background;
   -webkit-transition-duration: var(--timing-hover-focus);
           transition-duration: var(--timing-hover-focus);
   -webkit-transition-timing-function: var(--function-hover-focus);
           transition-timing-function: var(--function-hover-focus);
+}
+
+@media screen and (min-width: 1200px) {
+  .futer-form__button {
+    margin-left: 12px;
+  }
 }
 
 .futer-form__button:focus, .futer-form__button:hover {
