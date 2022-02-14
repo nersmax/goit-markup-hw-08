@@ -167,7 +167,7 @@ body {
   border-radius: 2px;
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -3px;
 }
 
 .nav__link--active::after {
@@ -506,8 +506,6 @@ body {
   font-weight: var(--font-weight-bold);
   font-size: 24px;
   line-height: 1.17;
-  padding-top: 16px;
-  padding-bottom: 16px;
   margin-bottom: 0;
   color: var(--first-backlight-color);
 }
@@ -543,8 +541,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
     font-size: 26px;
     line-height: 1.19;
   }
@@ -588,16 +584,12 @@ body {
     display: flex;
     font-size: 14px;
     line-height: 1.14;
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
 
 .contacts {
   display: block;
   margin-left: auto;
-  padding-top: 21px;
-  padding-bottom: 21px;
 }
 
 .contacts__icon {
@@ -824,17 +816,10 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero/hero-desc-1x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desc-1x.jpg);
-  }
-}
-
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero/hero-desc-2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desc-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero/hero-mob-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mob-2x.jpg);
   }
 }
 
@@ -845,17 +830,24 @@ body {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero/hero-tab-2x.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-tab-2x.jpg);
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero/hero-mob-2x.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-mob-2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero/hero-desc-1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desc-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../image/hero/hero-desc-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../image/hero/hero-desc-2x.jpg);
   }
 }
 
@@ -1102,7 +1094,7 @@ body {
 }
 
 .team {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: -30px;
 }
 
@@ -1132,6 +1124,7 @@ body {
   .team__card {
     width: calc(100% / 4 - 30px);
     margin-left: 30px;
+    margin-top: 50px;
   }
 }
 
@@ -1264,6 +1257,7 @@ body {
   .clients-header {
     font-size: 36px;
     line-height: 1.16;
+    margin-bottom: 50px;
   }
 }
 
